@@ -1,0 +1,116 @@
+.params-panel {
+  width: 240px;
+  border-left: 1px solid var(--color-glass-border);
+  background-color: rgba(17, 24, 39, 0.82);
+  backdrop-filter: var(--glass-blur);
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow-y: auto;
+}
+.params-panel-header {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-weight: 800;
+  color: var(--color-text-main);
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+.params-panel-header small {
+  text-transform: none;
+  font-weight: 600;
+  color: var(--color-text-subtle);
+  line-height: 1.4;
+  word-break: break-word;
+}
+.param-control {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(203, 213, 225, 0.12);
+}
+.param-control.disabled {
+  opacity: 0.58;
+}
+.param-control-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.param-control-row label {
+  color: var(--color-text-main);
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+.param-control-row input {
+  width: 76px;
+  background: #0B1220;
+  border: 1px solid rgba(203, 213, 225, 0.24);
+  color: var(--color-text-main);
+  border-radius: 6px;
+  padding: 5px 7px;
+}
+.param-control input[type="range"],
+.settings-range {
+  width: 100%;
+  accent-color: var(--color-accent-end);
+}
+.param-disabled-reason {
+  color: var(--color-text-subtle);
+  font-size: 0.68rem;
+  line-height: 1.35;
+}
+.params-model-meta {
+  padding-top: 14px;
+  border-top: 1px solid rgba(203, 213, 225, 0.12);
+  color: var(--color-text-subtle);
+  font-size: 0.76rem;
+  line-height: 1.8;
+}
+
+.inspector-panel {
+  border-top: 1px solid rgba(203, 213, 225, 0.12);
+  padding-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.inspector-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  color: var(--color-text-main);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.inspector-header small,
+.inspector-empty,
+.inspector-meta {
+  color: var(--color-text-subtle);
+  font-size: 0.72rem;
+  line-height: 1.5;
+}
+.inspector-json {
+  max-height: 160px;
+  font-size: 0.68rem;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  margin: 0;
+  padding: 10px;
+}
+.inspector-actions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+}
+
+@media (max-width: 1100px) {
+  .params-panel {
+    display: none;
+  }
+}

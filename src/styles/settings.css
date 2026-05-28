@@ -1,0 +1,178 @@
+.settings-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(203, 213, 225, 0.18);
+  padding-bottom: 10px;
+  flex-wrap: wrap;
+}
+.settings-tab {
+  background: transparent;
+  border: 1px solid rgba(203, 213, 225, 0.18);
+  color: var(--color-text-main);
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.85rem;
+  transition: var(--transition-smooth);
+}
+.settings-tab.active {
+  background: var(--color-gradient-accent);
+  border-color: transparent;
+  color: #fff;
+}
+.settings-tab:hover:not(.active) {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--color-text-main);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.form-input {
+  width: 100%;
+  background: #0B1220;
+  border: 1px solid rgba(203, 213, 225, 0.24);
+  color: var(--color-text-main);
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  outline: none;
+  font-family: var(--font-sans);
+  transition: var(--transition-smooth);
+}
+.form-input:focus {
+  border-color: var(--color-accent-end);
+}
+.form-input::placeholder {
+  color: #94A3B8;
+}
+
+.provider-status-card,
+.settings-section {
+  border: 1px solid rgba(203, 213, 225, 0.18);
+  padding: 14px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.18);
+  margin-bottom: 20px;
+}
+.provider-status-main {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 0.86rem;
+  color: var(--color-text-main);
+}
+.provider-status-main span:last-child {
+  color: var(--color-text-subtle);
+  margin-left: auto;
+}
+.provider-status-detail {
+  margin-top: 8px;
+  color: var(--color-text-subtle);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+.settings-subtitle {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--color-text-main);
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+.prompt-list {
+  max-height: 220px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.preset-list {
+  max-height: 330px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.empty-list-message {
+  font-size: 0.82rem;
+  color: var(--color-text-subtle);
+  text-align: center;
+  padding: 20px;
+}
+.prompt-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(203, 213, 225, 0.16);
+  border-radius: 8px;
+}
+.prompt-list-text {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.prompt-list-name {
+  font-size: 0.86rem;
+  font-weight: 800;
+  color: var(--color-text-main);
+}
+.prompt-list-preview {
+  font-size: 0.76rem;
+  color: var(--color-text-subtle);
+  max-width: 360px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.prompt-list-actions {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.small-action-btn {
+  padding: 5px 9px;
+  font-size: 0.75rem;
+}
+.settings-action-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.modal-cancel-btn {
+  background: transparent;
+  color: var(--color-text-muted);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+.modal-cancel-btn:hover {
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--color-text-main);
+}

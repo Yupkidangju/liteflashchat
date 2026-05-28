@@ -1,0 +1,33 @@
+# LiteFlashChat .gitignore 파일
+
+# 로컬 암호화 보안 기밀 (절대 배포/커밋 금지)
+.secret.key
+keys.json
+chats.json
+
+# Go 컴파일 바이너리 및 디버깅 덤프
+liteflashchat
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Node.js 의존성 및 빌드 산출물
+node_modules/
+dist/
+dist-ssr/
+output/
+*.local
+.eslintcache
+
+# 로그 및 OS 캐시 파일
+*.log
+.DS_Store
+Thumbs.db
+
+# Antigravity CLI 전용 에이전트 아카이브 및 캐시
+.antigravity/
+.antigravitycli/
